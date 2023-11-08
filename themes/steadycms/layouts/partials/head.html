@@ -2,7 +2,7 @@
 	<meta charset="UTF-8">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{- if .IsHome -}}{{ .Site.Title -}}{{ else -}}{{ with .Title }}{{ . }} | {{ end -}}{{ .Site.Title -}}{{ end -}}</title>
+  <title>{{- if .IsHome -}}{{ .Page.Title -}}{{ else -}}{{ with .Title }}{{ . }} | {{ end -}}{{ .Site.Title -}}{{ end -}}</title>
   {{ with .Page.Description }}<meta name="description" content="{{ . }}">{{ end }}
   {{ with .Site.Author.name }}<meta name="author" content="{{ . }}">{{ end }}
   {{ template "_internal/opengraph.html" . }}
