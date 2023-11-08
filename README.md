@@ -23,8 +23,8 @@ npm run watch
 
 ## Deployment
 
-Build CSS for production:
+Minify CSS for production:
 
 ```bash
-npm run build
+npm run minify
 ```
