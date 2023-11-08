@@ -1,0 +1,15 @@
+<head>
+	<meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{- if .IsHome -}}{{ .Site.Title -}}{{ else -}}{{ with .Title }}{{ . }} | {{ end -}}{{ .Site.Title -}}{{ end -}}</title>
+  {{ with .Page.Description }}<meta name="description" content="{{ . }}">{{ end }}
+  {{ with .Site.Author.name }}<meta name="author" content="{{ . }}">{{ end }}
+  {{ template "_internal/opengraph.html" . }}
+  <link rel="alternate" type="application/rss+xml" href="{{.Site.BaseURL }}index.xml" title="{{ .Site.Title }}">
+  <link rel="preconnect" href="api.fonts.coollabs.io" crossorigin>
+  <link href="https://api.fonts.coollabs.io/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="/css/styles.css" rel="stylesheet">
+  <script defer src="https://unpkg.com/alpinejs@3.13.2/dist/cdn.min.js"></script>
+  <script defer src="/js/lax.js"></script>
+</head>

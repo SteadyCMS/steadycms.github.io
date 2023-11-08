@@ -1,0 +1,8 @@
+baseURL = 'https://steadycms.com/'
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+languageCode = 'en-us'
+title = 'SteadyCMS'
+canonifyurls = true
+theme = "steadycms"
