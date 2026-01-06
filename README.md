@@ -1,6 +1,6 @@
 # SteadyCMS website
 
-The official SteadyCMS website at [steadycms.com](https://steadycms.com).
+The official SteadyCMS website at [steadycms.com](https://steadycms.github.io).
 
 
 ## Development
